@@ -546,6 +546,85 @@ section {
 }
 
 /* Projects Section */
+.project-tabs {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 3rem;
+	flex-wrap: wrap;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 0;
+}
+
+.tab-btn {
+	background: none;
+	border: none;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 1rem 1.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	font-family: inherit;
+	border-bottom: 2px solid transparent;
+}
+
+.tab-btn:hover {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.tab-btn.active {
+	color: var(--accent);
+	border-bottom-color: var(--accent);
+}
+
+.tab-btn.active::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+	animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+
+/* Project Links Container */
+.project-links {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.live-link {
+	color: var(--accent-secondary);
+}
+
+.live-link:hover {
+	color: var(--accent);
+}
+
+/* Responsive tabs */
+@media (max-width: 768px) {
+	.project-tabs {
+		gap: 0.5rem;
+	}
+	
+	.tab-btn {
+		font-size: 0.9rem;
+		padding: 0.75rem 1rem;
+	}
+}
+
 .projects-list {
   display: flex;
   flex-direction: column;

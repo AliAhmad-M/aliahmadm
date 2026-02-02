@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	
 	let scrolled = $state(false);
+	let activeTab = $state('game-dev');
 	
 	onMount(() => {
 		const handleScroll = () => {
@@ -11,51 +12,144 @@
 		return () => window.removeEventListener('scroll', handleScroll);
 	});
 	
-	const projects = [
-		{
-			number: '01',
-			name: 'Star Platinum Engine',
-			desc: 'A high-performance 2D game engine built from scratch in C++, featuring a custom ECS architecture with a strong focus on optimizing time complexities',
-			stack: ['C++17', 'SDL2', 'ECS', 'Linear Algebra'],
-			features: [
-				'Entity Component System using paginated sparse sets',
-				'O(1) entity-component operations',
-				'O(n) sprite rendering and sorting',
-				'O(n + m) sweep-and-prune collision detection',
-				'Animations, tilemaps, cameras, collisions, physics, etc.',
-			],
-			link: 'https://github.com/AliAhmad-M/StarPlatinumEngine'
+	const projectCategories = {
+		'game-dev': {
+			label: 'Game Development',
+			projects: [
+				{
+					number: '01',
+					name: 'Star Platinum Engine',
+					desc: 'A high-performance 2D game engine built from scratch in C++, featuring a custom ECS architecture with a strong focus on optimizing time complexities',
+					stack: ['C++17', 'SDL2', 'ECS', 'Linear Algebra'],
+					features: [
+						'Entity Component System using paginated sparse sets',
+						'O(1) entity-component operations',
+						'O(n) sprite rendering and sorting',
+						'O(n + m) sweep-and-prune collision detection',
+						'Animations, tilemaps, cameras, collisions, physics, etc.',
+					],
+					link: 'https://github.com/AliAhmad-M/StarPlatinumEngine'
+				},
+				{
+					number: '02',
+					name: '2D Physics Engine',
+					desc: 'A physics simulation engine implementing rigid body dynamics, collision detection algorithms, and impulse-based physics solving for both linear and angular forces',
+					stack: ['C#', 'Raylib', 'OOP', 'Linear Algebra'],
+					features: [
+						'Rigid body dynamics with rotation',
+						'SAT collision detection',
+						'Impulse-based response system',
+						'Real-time visualization'
+					],
+					link: 'https://github.com/AliAhmad-M/Raylib-Physics-Engine'
+				},
+				{
+					number: '03',
+					name: 'AI Ecosystem Simulation',
+					desc: 'An AI-based ecosystem simulation in Godot implementing FSMs with behavioral states and pathfinding to simulate prey-predator interactions and natural selection',
+					stack: ['Godot', 'GDScript', 'FSM', 'Pathfinding'],
+					features: [
+						'Finite State Machines for creature behavior',
+						'Prey-predator interaction dynamics',
+						'Natural selection mechanics',
+						'A* pathfinding implementation',
+					],
+					link: 'https://github.com/AliAhmad-M/GodotEcosystem'
+				}
+			]
 		},
-		{
-            number: '02',
-                name: 'Kites Blogs Platform',
-                desc: 'A modern, full-stack blog and discussion platform with secure authentication, markdown support, and responsive design built as a web technologies university project.',
-                stack: ['SvelteKit', 'TypeScript', 'MongoDB', 'Prisma'],
-                features: [
-                    'Email-based auth with session management',
-                    'Password hashing & secure sessions',
-                    'Sveltekit for frontend and routing',
-                    'MongoDB with Prisma ORM for database',
-                    'Markdown-based content creation',
-                    'Fully responsive interface'
-                ],
-                link: 'https://github.com/AliAhmad-M/Kites',
-                site: 'https://kites-forums.vercel.app'
+		'web-dev': {
+			label: 'Web Development',
+			projects: [
+				{
+					number: '01',
+					name: 'Kites Blogs Platform',
+					desc: 'A modern, full-stack blog and discussion platform with secure authentication, markdown support, and responsive design built as a web technologies university project.',
+					stack: ['SvelteKit', 'TypeScript', 'MongoDB', 'Prisma'],
+					features: [
+						'Email-based auth with session management',
+						'Password hashing & secure sessions',
+						'SvelteKit for frontend and routing',
+						'MongoDB with Prisma ORM for database',
+						'Markdown-based content creation',
+						'Fully responsive interface'
+					],
+					link: 'https://github.com/AliAhmad-M/Kites',
+					site: 'https://kites-forums.vercel.app'
+				},
+				{
+					number: '02',
+					name: 'Portfolio Website',
+					desc: 'Literally this website that you\'re looking at right now, basically a place for me to showoff all the work that I have done so far.',
+					stack: ['SvelteKit', 'JavaScript', 'CSS', 'HTML'],
+					features: [
+						'Fully responsive design',
+						'Smooth scroll animations',
+						'Dynamic project filtering',
+						'Custom CSS animations and effects'
+					],
+					link: 'https://github.com/AliAhmad-M/aliahmadm'
+				}
+			]
 		},
-		{
-			number: '03',
-			name: '2D Physics Engine',
-			desc: 'A physics simulation engine implementing rigid body dynamics, collision detection algorithms, and impulse-based physics solving for both linear and angular forces',
-			stack: ['C#', 'Raylib', 'OOP', 'Linear Algebra'],
-			features: [
-				'Rigid body dynamics with rotation',
-				'SAT collision detection',
-				'Impulse-based response system',
-				'Real-time visualization'
-			],
-			link: 'https://github.com/AliAhmad-M/Raylib-Physics-Engine'
+		'experimental': {
+			label: 'Experimental & Fun',
+			projects: [
+				{
+					number: '01',
+					name: '3D Celestial Body Simulation',
+					desc: 'A 3D space-time curvature simulation built in C and Raylib that accurately models gravitational effects and celestial body interactions',
+					stack: ['C', 'Raylib', 'Physics', 'Linear Algebra'],
+					features: [
+						'Space-time curvature simulation',
+						'Accurate gravitational physics',
+						'Real-time 3D visualization',
+						'Multiple celestial body interactions'
+					],
+					link: 'https://github.com/AliAhmad-M/CelestialBodySimulation-C'
+				},
+				{
+					number: '02',
+					name: '3D Renderer from Scratch',
+					desc: 'A custom 3D renderer implementing weak perspective projection in C with SDL2, capable of rendering basic 3D shapes using only 2D lines',
+					stack: ['C', 'SDL2', 'Graphics', 'Linear Algebra'],
+					features: [
+						'Weak perspective projection',
+						'Vertex transformation pipeline',
+						'Line-based 3D shape rendering',
+						'Built entirely from scratch'
+					],
+					link: 'https://github.com/AliAhmad-M/3D_Renderer_C'
+				},
+				{
+					number: '03',
+					name: 'Cloth Simulation with Tearing',
+					desc: 'A realistic cloth physics simulation featuring tearing mechanics, built using Verlet integration and constraint solving algorithms',
+					stack: ['C', 'Raylib', 'Physics', 'Verlet Integration'],
+					features: [
+						'Verlet integration for physics',
+						'Constraint-based solving',
+						'Realistic cloth tearing',
+						'Interactive real-time simulation'
+					],
+					link: 'https://github.com/AliAhmad-M/ClothSimulationC'
+				},
+				{
+					number: '04',
+					name: 'NES Pong in 6502 Assembly',
+					desc: 'A Pong clone written in pure 8-bit 6502 assembly language designed to run on native NES hardware, complete with collision handling and scoring',
+					stack: ['6502 Assembly', 'NES', 'Low-level Programming'],
+					features: [
+						'Written in pure 6502 assembly',
+						'Runs on native NES emulator',
+						'Custom collision detection',
+						'Score tracking and game logic'
+					],
+					link: 'https://github.com/AliAhmad-M/Pong-NES'
+				}
+			]
 		}
-	];
+	};
 	
 	const skills = {
 		'Languages': ['C/C++', 'C#', 'Python', 'TypeScript', 'JavaScript', 'SQL', 'Java'],
@@ -96,8 +190,8 @@
 				</h1>
 				
 				<p class="hero-title">
-					Software Engineer crafting <strong>game engines</strong>, 
-					<strong>web applications</strong>, and performant systems.
+					Software Developer crafting <strong>game dev projects</strong>, 
+					<strong>full stack web applications</strong>, and efficient systems.
 				</p>
 				
 				<div class="hero-actions">
@@ -121,7 +215,7 @@
 						<span class="metric-label">CGPA at NUST</span>
 					</div>
 					<div class="metric">
-						<span class="metric-value">3<span>+</span></span>
+						<span class="metric-value">9<span>+</span></span>
 						<span class="metric-label">Major Projects</span>
 					</div>
 					<div class="metric">
@@ -138,7 +232,7 @@
 			<div class="section-header">
 				<div>
 					<p class="section-label">01 / About</p>
-					<h2 class="section-title">Building at the<br/>intersection of systems<br/>and creativity</h2>
+					<h2 class="section-title">Building creative systems</h2>
 				</div>
 				<div class="section-line"></div>
 			</div>
@@ -250,8 +344,20 @@
 				<div class="section-line"></div>
 			</div>
 			
+			<div class="project-tabs">
+				{#each Object.entries(projectCategories) as [key, category]}
+					<button 
+						class="tab-btn" 
+						class:active={activeTab === key}
+						onclick={() => activeTab = key}
+					>
+						{category.label}
+					</button>
+				{/each}
+			</div>
+			
 			<div class="projects-list">
-				{#each projects as project}
+				{#each projectCategories[activeTab].projects as project}
 					<article class="project-card">
 						<div class="project-meta">
 							<span class="project-number">PROJECT {project.number}</span>
@@ -262,23 +368,28 @@
 									<span class="stack-tag">{tech}</span>
 								{/each}
 							</div>
-							<a href={project.link} target="_blank" rel="noopener" class="project-link">
-								View on GitHub
-								<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-									<path d="M7 17L17 7M17 7H7M17 7V17"/>
-								</svg>
-							</a>
+							
+							<div class="project-links">
+								{#if project.link !== '#'}
+									<a href={project.link} target="_blank" rel="noopener" class="project-link">
+										View on GitHub
+										<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M7 17L17 7M17 7H7M17 7V17"/>
+										</svg>
+									</a>
+								{/if}
 
-                            {#if project.site}
-                                <a href={project.site} target="_blank" rel="noopener" class="project-link live-link">
-                                    Live Site
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                            {/if}
+								{#if project.site}
+									<a href={project.site} target="_blank" rel="noopener" class="project-link live-link">
+										Live Site
+										<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+											<polyline points="15 3 21 3 21 9"></polyline>
+											<line x1="10" y1="14" x2="21" y2="3"></line>
+										</svg>
+									</a>
+								{/if}
+							</div>
 						</div>
 						<div class="project-features">
 							<h4>Key Features</h4>
