@@ -14,7 +14,7 @@
 	
 	const projectCategories = {
 		'game-dev': {
-			label: 'Game Development',
+			label: 'Game Dev',
 			projects: [
 				{
 					number: '01',
@@ -59,7 +59,7 @@
 			]
 		},
 		'web-dev': {
-			label: 'Web Development',
+			label: 'Web Dev',
 			projects: [
 				{
 					number: '01',
