@@ -63,7 +63,7 @@
 			projects: [
 				{
 					number: '01',
-					name: 'Kites Blogs Platform',
+					name: 'Kites (Blogs Platform)',
 					desc: 'A modern, full-stack blog and discussion platform with secure authentication, markdown support, and responsive design built as a web technologies university project.',
 					stack: ['SvelteKit', 'TypeScript', 'MongoDB', 'Prisma'],
 					features: [
@@ -152,12 +152,12 @@
 	};
 	
 	const skills = {
-		'Languages': ['C/C++', 'C#', 'Python', 'TypeScript', 'JavaScript', 'SQL', 'Java'],
-		'Frontend': ['SvelteKit', 'React', 'HTML/CSS', 'Node.js'],
-		'Backend': ['MongoDB', 'Prisma', 'Express.js', 'ASP.NET', 'Flask'],
-		'Game Dev': ['Godot', 'Unity', 'SDL2', 'OpenGL',  'Raylib'],
-		'Dev Tools': ['Git', 'Bash', 'VS Code', 'JetBrains', 'Linux'],
-		'ML/Data': ['NumPy', 'pandas', 'Matplotlib', 'Scikit-Learn', 'YOLO']
+		'Languages': ['Assembly', 'C/C++', 'C#', 'Python', 'TypeScript', 'JavaScript', 'Java'],
+		'Web Dev': ['SvelteKit', 'Next.js', 'Node.js', 'Express.js', 'React'],
+		'Database': ['MySQL', 'Oracle PLSQL', 'PostgreSQL', 'MongoDB', 'Supabase', 'Prisma'],
+		'Game Dev': ['Godot', 'Unity', 'OpenGL', 'SDL2', 'Raylib'],
+		'Dev Tools': ['Git', 'Bash', 'VS Code', 'Visual Studio', 'JetBrains IDEs'],
+		'ML/Data': ['NumPy', 'Pandas', 'Matplotlib', 'OpenCV', 'Scikit-Learn', 'Pytorch', 'YOLO']
 	};
 </script>
 
