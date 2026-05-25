@@ -92,6 +92,25 @@
 				}
 			]
 		},
+		'ai': {
+			label: 'AI and ML/DL',
+			projects: [
+				{
+					number: '01',
+					name: 'Super Mario Bros AI',
+					desc: 'A double Q-learning based deep reinforcement learning model built with Pytorch and gym-super-mario-bros that learns how to play Mario',
+					stack: ['Python', 'Pytorch', 'TorchRL', 'OpenAI Gym'],
+					features: [
+						'Double Q-learning based Deep RL Model',
+						'Accurate Super Mario Bros environment',
+						'Training model on level of your choice',
+						'Testing trained model with visualization'
+					],
+					link: 'https://github.com/AliAhmad-M/SMB-RL'
+				}
+			]
+		},
+
 		'experimental': {
 			label: 'Experimental & Fun',
 			projects: [
