@@ -42,19 +42,6 @@
 						'Real-time visualization'
 					],
 					link: 'https://github.com/AliAhmad-M/Raylib-Physics-Engine'
-				},
-				{
-					number: '03',
-					name: 'AI Ecosystem Simulation',
-					desc: 'An AI-based ecosystem simulation in Godot implementing FSMs with behavioral states and pathfinding to simulate prey-predator interactions and natural selection',
-					stack: ['Godot', 'GDScript', 'FSM', 'Pathfinding'],
-					features: [
-						'Finite State Machines for creature behavior',
-						'Prey-predator interaction dynamics',
-						'Natural selection mechanics',
-						'A* pathfinding implementation',
-					],
-					link: 'https://github.com/AliAhmad-M/GodotEcosystem'
 				}
 			]
 		},
@@ -93,7 +80,7 @@
 			]
 		},
 		'ai': {
-			label: 'AI and ML/DL',
+			label: 'Artifical Intelligence',
 			projects: [
 				{
 					number: '01',
@@ -107,6 +94,19 @@
 						'Testing trained model with visualization'
 					],
 					link: 'https://github.com/AliAhmad-M/SMB-RL'
+				},
+								{
+					number: '02',
+					name: 'AI Ecosystem Simulation',
+					desc: 'An AI-based ecosystem simulation in Godot implementing FSMs with behavioral states and pathfinding to simulate prey-predator interactions and natural selection',
+					stack: ['Godot', 'GDScript', 'FSM', 'Pathfinding'],
+					features: [
+						'Finite State Machines for creature behavior',
+						'Prey-predator interaction dynamics',
+						'Natural selection mechanics',
+						'A* pathfinding implementation',
+					],
+					link: 'https://github.com/AliAhmad-M/GodotEcosystem'
 				}
 			]
 		},
@@ -251,7 +251,7 @@
 			<div class="section-header">
 				<div>
 					<p class="section-label">01 / About</p>
-					<h2 class="section-title">Building creative systems</h2>
+					<h2 class="section-title">Solving problems with creativity</h2>
 				</div>
 				<div class="section-line"></div>
 			</div>
@@ -264,18 +264,18 @@
 					</p>
 					<p> 
 						Whether it be implementing <span class="highlight">game engines</span> 
-						from scratch, creating <span class="highlight">full-stack web apps</span> or even developing
-						projects in <span class="highlight">assembly language</span>, I always look for new ways to 
+						from scratch, creating <span class="highlight">full-stack web apps</span> or even working
+						with <span class="highlight">low level programming</span>, I always look for new ways to 
 						challenge myself 
 					</p>
 					<p>
 						My journey started with game development, where I later discovered the joy of building 
-						<strong>engines and tools</strong> rather than just using them. My time in university led
-						me to expand my knowledge in other fields, mainly full stack web development 
+						<strong>programs and tools</strong> rather than just using them. My time in university led
+						me to expand my knowledge in other fields such as software development and artificial intelligence
 					</p>
 					<p>
-						As I mentioned earlier, I'm interested in challenging myself with fun and difficult projects 
-						to expand my experience and knowledge
+						As I mentioned earlier, I'm interested in challenging myself with by solving problems 
+						to increase my experience and knowledge
 					</p>
 				</div>
 				
@@ -307,7 +307,7 @@
 							</div>
 							<div class="terminal-line">
 								<span class="line-prompt"></span>
-								<span class="line-content">Full-Stack Web, Computer Graphics, ML</span>
+								<span class="line-content">Full-Stack Web, Computer Graphics, AI</span>
 							</div>
 							<br>
 							<div class="terminal-line">
@@ -340,7 +340,7 @@
 					<span class="edu-date">Sep 2023 - May 2027</span>
 					<h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
 					<p class="edu-school">National University of Sciences and Technology (NUST)</p>
-					<p class="edu-location">Islamabad, Pakistan | CGPA: 3.81/4.00</p>
+					<p class="edu-location">Islamabad, Pakistan | CGPA: 3.78/4.00</p>
 				</div>
 				
 				<div class="edu-item">
