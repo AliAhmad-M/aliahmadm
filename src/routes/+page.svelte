@@ -249,12 +249,12 @@
 						<span class="metric-label">CGPA at NUST</span>
 					</div>
 					<div class="metric">
-						<span class="metric-value">9<span>+</span></span>
+						<span class="metric-value">11</span>
 						<span class="metric-label">Major Projects</span>
 					</div>
 					<div class="metric">
-						<span class="metric-value">7<span>+</span></span>
-						<span class="metric-label">Languages</span>
+						<span class="metric-value">7</span>
+						<span class="metric-label">Programming Languages</span>
 					</div>
 				</div>
 			</div>
