@@ -126,7 +126,7 @@
 						'Real-time 3D visualization',
 						'Multiple celestial body interactions'
 					],
-					link: 'https://github.com/AliAhmad-M/CelestialBodySimulation-C'
+					link: 'https://github.com/AliAhmad-M/3D-Cloth-Simulation'
 				},
 				{
 					
