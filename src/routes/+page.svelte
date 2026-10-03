@@ -95,7 +95,7 @@
 					],
 					link: 'https://github.com/AliAhmad-M/SMB-RL'
 				},
-								{
+				{
 					number: '02',
 					name: 'AI Ecosystem Simulation',
 					desc: 'An AI-based ecosystem simulation in Godot implementing FSMs with behavioral states and pathfinding to simulate prey-predator interactions and natural selection',
@@ -115,7 +115,22 @@
 			label: 'Experimental & Fun',
 			projects: [
 				{
+					
 					number: '01',
+					name: '3D Cloth Simulation',
+					desc: 'Cloth material physics and interaction with solid objects in three dimensions. Implemented from scratch using C and OpenGL',
+					stack: ['C', 'OpenGL', 'Physics', 'Verlet Integrationa'],
+					features: [
+						'Space-time curvature simulation',
+						'Accurate gravitational physics',
+						'Real-time 3D visualization',
+						'Multiple celestial body interactions'
+					],
+					link: 'https://github.com/AliAhmad-M/CelestialBodySimulation-C'
+				},
+				{
+					
+					number: '02',
 					name: '3D Celestial Body Simulation',
 					desc: 'A 3D space-time curvature simulation built in C and Raylib that accurately models gravitational effects and celestial body interactions',
 					stack: ['C', 'Raylib', 'Physics', 'Linear Algebra'],
@@ -128,7 +143,7 @@
 					link: 'https://github.com/AliAhmad-M/CelestialBodySimulation-C'
 				},
 				{
-					number: '02',
+					number: '03',
 					name: '3D Renderer from Scratch',
 					desc: 'A custom 3D renderer implementing weak perspective projection in C with SDL2, capable of rendering basic 3D shapes using only 2D lines',
 					stack: ['C', 'SDL2', 'Graphics', 'Linear Algebra'],
@@ -141,10 +156,10 @@
 					link: 'https://github.com/AliAhmad-M/3D_Renderer_C'
 				},
 				{
-					number: '03',
+					number: '04',
 					name: 'Cloth Simulation with Tearing',
 					desc: 'A realistic cloth physics simulation featuring tearing mechanics, built using Verlet integration and constraint solving algorithms',
-					stack: ['C', 'Raylib', 'Physics', 'Verlet Integration'],
+					stack: ['C', 'OpenGL', 'Physics', 'Verlet Integration'],
 					features: [
 						'Verlet integration for physics',
 						'Constraint-based solving',
@@ -154,7 +169,7 @@
 					link: 'https://github.com/AliAhmad-M/ClothSimulationC'
 				},
 				{
-					number: '04',
+					number: '05',
 					name: 'NES Pong in 6502 Assembly',
 					desc: 'A Pong clone written in pure 8-bit 6502 assembly language designed to run on native NES hardware, complete with collision handling and scoring',
 					stack: ['6502 Assembly', 'NES', 'Low-level Programming'],
@@ -230,7 +245,7 @@
 				
 				<div class="hero-metrics">
 					<div class="metric">
-						<span class="metric-value">3.81<span>/4.00</span></span>
+						<span class="metric-value">3.78<span>/4.00</span></span>
 						<span class="metric-label">CGPA at NUST</span>
 					</div>
 					<div class="metric">
