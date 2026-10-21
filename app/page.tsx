@@ -32,8 +32,7 @@ export default function Home() {
             </h1>
 
             <p className="hero-title">
-              Software Developer crafting <strong>game dev projects</strong>,{' '}
-              <strong>full stack web applications</strong>, and efficient systems.
+              I enjoy making software and solving difficult technical problems. This portfolio shows my work, the decisions behind it and the results.
             </p>
 
             <div className="hero-actions">
@@ -76,23 +75,13 @@ export default function Home() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I&apos;m a <strong>student of Computer Science at NUST, H-12</strong> with a strong passion for
-                understanding how programs work at a fundamental level.
+                I&apos;m a <strong>student of Computer Science at the National University of Sciences and Technology (NUST) H-12, Islamabad</strong> with a strong passion for programming.
               </p>
               <p>
-                Whether it be implementing <span className="highlight">game engines</span> from scratch,
-                creating <span className="highlight">full-stack web apps</span> or even working
-                with <span className="highlight">low level programming</span>, I always look for new ways to
-                challenge myself
+                I've worked across multiple fields including full-stack web development, artificial intelligence and game development including developing custom game engines from scratch.
               </p>
               <p>
-                My journey started with game development, where I later discovered the joy of building{' '}
-                <strong>programs and tools</strong> rather than just using them. My time in university led
-                me to expand my knowledge in other fields such as software development and artificial intelligence
-              </p>
-              <p>
-                As I mentioned earlier, I&apos;m interested in challenging myself by solving problems
-                to increase my experience and knowledge
+                I enjoy challenging myself by solving tough problems to improve my skills. Every project is an opportunity to learn something new and push my boundaries.
               </p>
             </div>
 
@@ -111,7 +100,7 @@ export default function Home() {
                   </div>
                   <div className="terminal-line">
                     <span className="line-prompt"></span>
-                    <span className="line-content">Software Developer &amp; CS Student</span>
+                    <span className="line-content">Software developer, computer scientist</span>
                   </div>
                   <br />
                   <div className="terminal-line">
@@ -120,11 +109,7 @@ export default function Home() {
                   </div>
                   <div className="terminal-line">
                     <span className="line-prompt"></span>
-                    <span className="line-content">Game Development, Physics Simulations</span>
-                  </div>
-                  <div className="terminal-line">
-                    <span className="line-prompt"></span>
-                    <span className="line-content">Full-Stack Web, Computer Graphics, AI</span>
+                    <span className="line-content">Full-stack web development, AI, gamedev</span>
                   </div>
                   <br />
                   <div className="terminal-line">

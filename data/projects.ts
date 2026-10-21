@@ -4,17 +4,16 @@ export const projectCategories = {
     projects: [
       {
         number: '01',
-        name: 'Star Platinum Engine',
-        desc: 'A high-performance 2D game engine built from scratch in C++, featuring a custom ECS architecture with a strong focus on optimizing time complexities',
-        stack: ['C++17', 'SDL2', 'ECS', 'Linear Algebra'],
+        name: 'Nova Engine',
+        desc: 'A high-performance custom game engine built from scratch in C++, featuring a custom ECS architecture and integrated graphical interface for editing game scenes.',
+        stack: ['C++', 'OpenGL', 'ImGUI', 'Box2D', 'Jolt Physics'],
         features: [
           'Entity Component System using paginated sparse sets',
-          'O(1) entity-component operations',
-          'O(n) sprite rendering and sorting',
-          'O(n + m) sweep-and-prune collision detection',
-          'Animations, tilemaps, cameras, collisions, physics, etc.',
+          'All component operations have O(1) time complexity',
+          'Custom graphical editor with scene preview and editing',
+          '2D + 3D development support',
         ],
-        link: 'https://github.com/AliAhmad-M/StarPlatinumEngine'
+        link: 'https://github.com/AliAhmad-M/NovaEngine'
       },
       {
         number: '02',
@@ -172,10 +171,10 @@ export const projectCategories = {
 };
 
 export const skills = {
-  'Languages': ['Assembly', 'C/C++', 'C#', 'Python', 'TypeScript', 'JavaScript', 'Java'],
-  'Web Dev': ['SvelteKit', 'Next.js', 'Node.js', 'Express.js', 'React'],
-  'Database': ['MySQL', 'Oracle PLSQL', 'PostgreSQL', 'MongoDB', 'Supabase', 'Prisma'],
-  'Game Dev': ['Godot', 'Unity', 'OpenGL', 'SDL2', 'Raylib'],
+  'Languages':  ['Assembly', 'C/C++', 'C#', 'Python', 'TypeScript', 'JavaScript', 'Java'],
+  'Web Dev':    ['Next.js', 'Sveltekit', 'Node.js', 'Express.js', 'React.js', 'Svelte'],
+  'Database':   ['SQL', 'MongoDB', 'Supabase', 'Prisma ORM'],
+  'Game Dev': ['Unity', 'Godot', 'OpenGL', 'SDL2', 'Raylib'],
   'Dev Tools': ['Git', 'Bash', 'VS Code', 'Visual Studio', 'JetBrains IDEs'],
   'ML/Data': ['NumPy', 'Pandas', 'Matplotlib', 'OpenCV', 'Scikit-Learn', 'Pytorch', 'YOLO']
 };

@@ -16,7 +16,6 @@ export default function Navbar() {
     <nav className={scrolled ? 'scrolled' : ''}>
       <div className="container">
         <Link href="/" className="logo">
-          <span className="logo-icon">AA</span>
           Ali Ahmad
         </Link>
         <ul className="nav-links">
