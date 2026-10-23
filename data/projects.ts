@@ -17,6 +17,17 @@ export const projectCategories = {
       },
       {
         number: '02',
+        name: 'Blackwood',
+        desc: 'A murder mystery visual novel with a branching storyline, made in the Godot Engine using the Dialogue Manager addon. A playable demo is available on itch.io.',
+        stack: ['Godot', 'GDScript', 'Dialogue Manager'],
+        features: [
+          'Branching choices that shape the story',
+          'Save/load system',
+        ],
+        link: 'https://blaze-glitch.itch.io/blackwood-demo'
+      },
+      {
+        number: '03',
         name: '2D Physics Engine',
         desc: 'A physics simulation engine implementing rigid body dynamics, collision detection algorithms, and impulse-based physics solving for both linear and angular forces',
         stack: ['C#', 'Raylib', 'OOP', 'Linear Algebra'],
@@ -171,9 +182,9 @@ export const projectCategories = {
 };
 
 export const skills = {
-  'Languages':  ['Assembly', 'C/C++', 'C#', 'Python', 'TypeScript', 'JavaScript', 'Java'],
-  'Web Dev':    ['Next.js', 'Sveltekit', 'Node.js', 'Express.js', 'React.js', 'Svelte'],
-  'Database':   ['SQL', 'MongoDB', 'Supabase', 'Prisma ORM'],
+  'Languages': ['Assembly', 'C/C++', 'C#', 'Python', 'TypeScript', 'JavaScript', 'Java'],
+  'Web Dev': ['Next.js', 'Sveltekit', 'Node.js', 'Express.js', 'React.js', 'Svelte'],
+  'Database': ['SQL', 'MongoDB', 'Supabase', 'Prisma ORM'],
   'Game Dev': ['Unity', 'Godot', 'OpenGL', 'SDL2', 'Raylib'],
   'Dev Tools': ['Git', 'Bash', 'VS Code', 'Visual Studio', 'JetBrains IDEs'],
   'ML/Data': ['NumPy', 'Pandas', 'Matplotlib', 'OpenCV', 'Scikit-Learn', 'Pytorch', 'YOLO']

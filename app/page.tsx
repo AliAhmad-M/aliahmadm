@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
+import BootSequence from '@/components/Bootsequence';
+
 import { skills } from '@/data/projects';
 
 // @ts-ignore
@@ -18,6 +20,7 @@ function SectionHeader({ label, title }) {
 export default function Home() {
   return (
     <div className="app">
+      <BootSequence />
       <div className="grid-bg"></div>
       <div className="glow-orb primary"></div>
       <div className="glow-orb secondary"></div>
@@ -36,7 +39,7 @@ export default function Home() {
             </p>
 
             <div className="hero-actions">
-              <a href="#projects" className="btn btn-primary">
+              <a href="#projects" className="btn btn-secondary">
                 View My Work
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M7 17L17 7M17 7H7M17 7V17" />
@@ -75,10 +78,10 @@ export default function Home() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I&apos;m a <strong>student of Computer Science at the National University of Sciences and Technology (NUST) H-12, Islamabad</strong> with a strong passion for programming.
+                I&apos;m a <strong>student of Computer Science at the National University of Sciences and Technology (NUST) H-12, Islamabad</strong> with a strong passion for problem solving.
               </p>
               <p>
-                I've worked across multiple fields including full-stack web development, artificial intelligence and game development including developing custom game engines from scratch.
+                I've worked extensively across multiple fields including full-stack web development, artificial intelligence and game development and even developed custom game engines from scratch.
               </p>
               <p>
                 I enjoy challenging myself by solving tough problems to improve my skills. Every project is an opportunity to learn something new and push my boundaries.
@@ -109,7 +112,7 @@ export default function Home() {
                   </div>
                   <div className="terminal-line">
                     <span className="line-prompt"></span>
-                    <span className="line-content">Full-stack web development, AI, gamedev</span>
+                    <span className="line-content">Full-stack web development, artificial intelligence, gamedev</span>
                   </div>
                   <br />
                   <div className="terminal-line">
