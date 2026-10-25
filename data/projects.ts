@@ -24,7 +24,9 @@ export const projectCategories = {
           'Branching choices that shape the story',
           'Save/load system',
         ],
-        link: 'https://blaze-glitch.itch.io/blackwood-demo'
+        link: 'https://github.com/AliAhmad-M/VisualNovel',
+        download: "https://blaze-glitch.itch.io/blackwood-demo"
+
       },
       {
         number: '03',
@@ -102,7 +104,8 @@ export const projectCategories = {
           'Natural selection mechanics',
           'A* pathfinding implementation',
         ],
-        link: 'https://github.com/AliAhmad-M/GodotEcosystem'
+        link: "https://github.com/AliAhmad-M/GodotEcosystem",
+        download: "https://blaze-glitch.itch.io/ecosystem"
       }
     ]
   },
@@ -111,7 +114,6 @@ export const projectCategories = {
     label: 'Experimental & Fun',
     projects: [
       {
-        
         number: '01',
         name: '3D Cloth Simulation',
         desc: 'Cloth material physics and interaction with solid objects in three dimensions. Implemented from scratch using C and OpenGL',

@@ -1,0 +1,23 @@
+.boot {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: var(--bg-primary);
+  padding: 2rem clamp(1rem, 5vw, 4rem);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.boot-line {
+  font-size: 1.4rem;
+  white-space: pre-wrap;
+  min-height: 1.4rem;
+}
+
+.boot-hint {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}

@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { projectCategories } from '@/data/projects';
 
+import './Projects.css';
+
 const ArrowIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <path d="M7 17L17 7M17 7H7M17 7V17" />
@@ -55,6 +57,30 @@ export default function Projects() {
                       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                       <polyline points="15 3 21 3 21 9" />
                       <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                )}
+                {project.download && (
+                  <a
+                    href={project.download}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link download-link"
+                  >
+                    Download
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="square"
+                      strokeLinejoin="miter"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" y1="3" x2="12" y2="15" />
                     </svg>
                   </a>
                 )}

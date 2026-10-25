@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import './Navbar.css';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,12 +20,13 @@ export default function Navbar() {
           ./Ali-Ahmad
         </Link>
         <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><Link href="/#about">About</Link></li>
+          <li><Link href="/#education">Education</Link></li>
+          <li><Link href="/#projects">Work</Link></li>
+          <li><Link href="/#skills">Skills</Link></li>
+          <li><Link href="/blog">Blog</Link></li>
         </ul>
-        <a href="#contact" className="nav-cta">Get in Touch</a>
+        <Link href="/#contact" className="nav-cta">Get in Touch</Link>
       </div>
     </nav>
   );

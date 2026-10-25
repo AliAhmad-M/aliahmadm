@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import './Bootsequence.css';
 
 const LINES = [
   'NOVA ][',

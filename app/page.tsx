@@ -1,8 +1,9 @@
-import Navbar from '@/components/Navbar';
-import Projects from '@/components/Projects';
+import Projects from '@/components/home/Projects';
 import BootSequence from '@/components/Bootsequence';
 
 import { skills } from '@/data/projects';
+
+import './home.css';
 
 // @ts-ignore
 function SectionHeader({ label, title }) {
@@ -24,8 +25,6 @@ export default function Home() {
       <div className="grid-bg"></div>
       <div className="glow-orb primary"></div>
       <div className="glow-orb secondary"></div>
-
-      <Navbar />
 
       <section className="hero">
         <div className="container">
@@ -209,13 +208,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <footer>
-        <div className="container">
-          <p>Designed &amp; Built by <span className="accent">Ali Ahmad</span></p>
-          <p>2026</p>
-        </div>
-      </footer>
     </div>
   );
 }
