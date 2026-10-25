@@ -42,7 +42,7 @@ export default function BlogCover({ src, alt, priority, sizes }: Props) {
         priority={priority}
         sizes={sizes}
         style={{ 
-          objectFit: 'cover',
+          objectFit: 'contain',
           opacity: loaded ? 1 : 0, 
           transition: 'opacity 0.4s ease-in-out'
         }}
