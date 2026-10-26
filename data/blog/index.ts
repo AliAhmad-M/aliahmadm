@@ -1,6 +1,7 @@
 import type { BlogPost } from './types';
 
 import ecsInCpp from './posts/ecs-in-cpp';
+import sprite2D from './posts/sprites-2d';
 import clothPhysics from './posts/cloth-physics';
 import gravitySim from './posts/gravity-sim';
 import simple3D from './posts/simple-3d';
@@ -11,6 +12,7 @@ export type { BlogPost };
 
 export const blogs: BlogPost[] = [
     ecsInCpp,
+    sprite2D,
     // clothPhysics,
     // gravitySim,
     // simple3D,
