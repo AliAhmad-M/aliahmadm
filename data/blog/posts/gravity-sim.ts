@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 const post: BlogPost = {
   slug: 'gravity-sim',
   title: 'Simulating Gravity And Celestial Bodies',
-  tags: ['C', 'OpenGL', 'Physics'],
+  tags: ['C', 'OpenGL', 'Computer Graphics', 'Physics'],
   cover: '/blog/gravity-sim.jpg',
   excerpt:
     'An overview of how gravity simulations and celestial body physics are implemented using Newtonian physics.',

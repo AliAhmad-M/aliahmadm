@@ -138,7 +138,7 @@ export const projectCategories = {
           'Real-time 3D visualization',
           'Multiple celestial body interactions'
         ],
-        link: 'https://github.com/AliAhmad-M/CelestialBodySimulation-C'
+        link: 'https://github.com/AliAhmad-M/Celestial-Body-Simulation'
       },
       {
         number: '03',
@@ -151,11 +151,11 @@ export const projectCategories = {
           'Line-based 3D shape rendering',
           'Built entirely from scratch'
         ],
-        link: 'https://github.com/AliAhmad-M/3D_Renderer_C'
+        link: 'https://github.com/AliAhmad-M/3D-Renderer'
       },
       {
         number: '04',
-        name: 'Cloth Simulation with Tearing',
+        name: '2D Cloth Simulation with Tearing',
         desc: 'A realistic cloth physics simulation featuring tearing mechanics, built using Verlet integration and constraint solving algorithms',
         stack: ['C', 'OpenGL', 'Physics', 'Verlet Integration'],
         features: [
@@ -164,7 +164,7 @@ export const projectCategories = {
           'Realistic cloth tearing',
           'Interactive real-time simulation'
         ],
-        link: 'https://github.com/AliAhmad-M/ClothSimulationC'
+        link: 'https://github.com/AliAhmad-M/2D-Cloth-Simulation'
       },
       {
         number: '05',

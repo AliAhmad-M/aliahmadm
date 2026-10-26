@@ -4,7 +4,7 @@ const post: BlogPost = {
   slug: 'ecs-in-cpp',
   title: 'Implementing Entity Component System (ECS) from Scratch in C++',
   tags: ['C++', 'ECS', 'Gamedev'],
-  cover: '/blog/ecs-in-cpp/ecs-in-cpp.png',
+  cover: '/blog/ecs-in-cpp/cover.png',
   excerpt:
     'A guide and analysis towards implementing an Entity Component System (ECS) from scratch in C++.',
   markdown: `
@@ -212,7 +212,7 @@ if ((entitySignature & systemSignature) == systemSignature) {
 When components are added or removed, we updates the entity's signature and perform this check. This lets us automatically adjust 
 which systems process the entity without manual registration or scanning every frame.
 
-## Source Code
+## Source code
 If you want to see the full implementation of this ECS, check out the Nova Engine on [Github](https://github.com/AliAhmad-M/NovaEngine).
 You can find all ECS related code in the \`Core/include/Core/ECS\` and \`Core/src/ECS\` folders.
 `,

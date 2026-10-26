@@ -3,8 +3,8 @@ import type { BlogPost } from '../types';
 const post: BlogPost = {
   slug: 'sprites-2D',
   title: '2D Sprite Rendering and Animation in C++ and OpenGL',
-  tags: ['C++', 'OpenGL'],
-  cover: '/blog/sprites-2d/sprites-2d.png',
+  tags: ['C++', 'OpenGL', 'Computer Graphics'],
+  cover: '/blog/sprites-2d/cover.png',
   excerpt:
     'A guide towards rendering 2D sprites and animating them in C++ using OpenGL.',
   markdown: `
@@ -400,7 +400,7 @@ match the size of your world. And the depth buffer has finite precision. With a 
 step is about 0.000012, while one pixel of Y moves depth by 0.00001. Two sprites whose sort lines are within a pixel of each other 
 can flicker. Keeping \`MAX_Y_RANGE\` close to the real world size gives each pixel more room.
 
-## Source Code
+## Source code
 If you want to see the full implementation for sprite rendering, check out the Nova Engine on [Github](https://github.com/AliAhmad-M/NovaEngine).
 You can find all related code in the \`Graphics/\` folder.
 `,

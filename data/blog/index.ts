@@ -13,7 +13,7 @@ export type { BlogPost };
 export const blogs: BlogPost[] = [
     ecsInCpp,
     sprite2D,
-    // clothPhysics,
+    clothPhysics,
     // gravitySim,
     // simple3D,
     // nesPong,

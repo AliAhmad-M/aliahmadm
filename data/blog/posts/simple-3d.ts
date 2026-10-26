@@ -3,7 +3,7 @@ import type { BlogPost } from '../types';
 const post: BlogPost = {
   slug: 'simple-3d',
   title: '3D Rendering Using Weak Perspective Projection',
-  tags: ['C', 'OpenGL'],
+  tags: ['C', 'OpenGL', 'Computer Graphics'],
   cover: '/blog/simple-3d.jpg',
   excerpt:
     'A guide towards implementing basic 3D rendering in C using weak perspective projection.',
