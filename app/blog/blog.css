@@ -286,6 +286,20 @@
   padding-top: 0.5rem;
 }
 
+.blog-tag {
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+  border: 1px solid var(--accent-secondary);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.blog-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  cursor: pointer;
+}
+
 .blog-cover-fallback {
   position: absolute;
   inset: 0;
