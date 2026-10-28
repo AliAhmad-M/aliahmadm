@@ -14,8 +14,8 @@ export const blogs: BlogPost[] = [
     ecsInCpp,
     sprite2D,
     clothPhysics,
-    // gravitySim,
-    // simple3D,
+    gravitySim,
+    simple3D,
     // nesPong,
     // collision2D,
 ];
