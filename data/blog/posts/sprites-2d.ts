@@ -2,7 +2,7 @@ import type { BlogPost } from '../types';
 
 const post: BlogPost = {
   slug: 'sprites-2D',
-  title: '2D Sprite Rendering and Animation in C++ and OpenGL',
+  title: '2D Sprite Rendering & Animation in C++ and OpenGL',
   tags: ['C++', 'OpenGL', 'Computer Graphics'],
   cover: '/blog/sprites-2d/cover.png',
   excerpt:

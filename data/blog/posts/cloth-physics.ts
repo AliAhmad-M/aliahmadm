@@ -2,7 +2,7 @@ import type { BlogPost } from '../types';
 
 const post: BlogPost = {
   slug: 'cloth-physics',
-  title: 'Cloth Simulation in 2D and 3D using C and OpenGL',
+  title: 'Cloth Simulation in 2D & 3D using C and OpenGL',
   tags: ['C', 'OpenGL', 'Computer Graphics', 'Physics'],
   cover: '/blog/cloth-physics/cover.png',
   excerpt:

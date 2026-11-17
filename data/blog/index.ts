@@ -16,8 +16,8 @@ export const blogs: BlogPost[] = [
     clothPhysics,
     gravitySim,
     simple3D,
-    // nesPong,
-    // collision2D,
+    nesPong,
+    collision2D,
 ];
 
 export function getBlogBySlug(slug: string): BlogPost | undefined {

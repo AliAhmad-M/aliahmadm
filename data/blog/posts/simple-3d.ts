@@ -2,7 +2,7 @@ import type { BlogPost } from '../types';
 
 const post: BlogPost = {
   slug: 'simple-3d',
-  title: '3D Wireframe Rendering in C and SDL',
+  title: '3D Wireframe Rendering in C & SDL',
   tags: ['C', 'SDL', 'Computer Graphics'],
   cover: '/blog/simple-3d/cover.png',
   excerpt:

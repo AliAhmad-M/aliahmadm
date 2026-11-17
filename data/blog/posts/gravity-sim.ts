@@ -2,7 +2,7 @@ import type { BlogPost } from '../types';
 
 const post: BlogPost = {
   slug: 'gravity-sim',
-  title: 'Gravity and Celestial Bodies in C with Raylib',
+  title: 'Gravity & Celestial Bodies in C with Raylib',
   tags: ['C', 'Raylib', 'Computer Graphics', 'Physics'],
   cover: '/blog/gravity-sim/cover.png',
   excerpt:
