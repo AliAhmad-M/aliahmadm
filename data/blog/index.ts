@@ -4,6 +4,7 @@ import ecsInCpp from './posts/ecs-in-cpp';
 import sprite2D from './posts/sprites-2d';
 import clothPhysics from './posts/cloth-physics';
 import gravitySim from './posts/gravity-sim';
+import smbRl from './posts/smb-rl';
 import simple3D from './posts/simple-3d';
 import nesPong from './posts/nes-pong';
 import collision2D from './posts/collision-2d';
@@ -15,6 +16,7 @@ export const blogs: BlogPost[] = [
     sprite2D,
     clothPhysics,
     gravitySim,
+    smbRl,
     simple3D,
     nesPong,
     collision2D,
