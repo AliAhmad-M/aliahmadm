@@ -13,4 +13,4 @@ Live site: https://aliahmadm.vercel.app/
   
 ## Deployment
 
-The site is deployed on Vercel at: https://aliahmadm.vercel.app/
+The site is deployed on Vercel.
