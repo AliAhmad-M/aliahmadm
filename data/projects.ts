@@ -10,19 +10,23 @@ export const projectCategories = {
         features: [
           'Entity Component System using paginated sparse sets',
           'All component operations have O(1) time complexity',
+          'Handles close to 150,000 sprite entities at 50-60 FPS (capped at 60) on a 4GB VRAM GPU',
           'Custom graphical editor with scene preview and editing',
-          '2D + 3D development support',
+          'Box2D for 2D physics and Jolt Physics for 3D',
+          '2D + 3D development support'
         ],
         link: 'https://github.com/AliAhmad-M/NovaEngine'
       },
       {
         number: '02',
         name: 'Blackwood',
-        desc: 'A murder mystery visual novel with a branching storyline, made in the Godot Engine using the Dialogue Manager addon. A playable demo is available on itch.io.',
+        desc: 'A murder mystery visual novel with a branching storyline, made by a team of 3 in the Godot Engine using the Dialogue Manager addon. A playable demo is available on itch.io.',
         stack: ['Godot', 'GDScript', 'Dialogue Manager'],
         features: [
           'Branching choices that shape the story',
-          'Save/load system',
+          '5 places where the player can die and restart',
+          'Demo ends on a "To be continued" screen',
+          'Save/load system'
         ],
         link: 'https://github.com/AliAhmad-M/VisualNovel',
         download: "https://blaze-glitch.itch.io/blackwood-demo"
@@ -37,6 +41,7 @@ export const projectCategories = {
           'Rigid body dynamics with rotation',
           'SAT collision detection',
           'Impulse-based response system',
+          'Runs 500+ simultaneous bodies at 50-60 FPS (capped at 60)',
           'Real-time visualization'
         ],
         link: 'https://github.com/AliAhmad-M/Raylib-Physics-Engine'
@@ -49,7 +54,7 @@ export const projectCategories = {
       {
         number: '01',
         name: 'Kites (Blogs Platform)',
-        desc: 'A modern, full-stack blog and discussion platform with secure authentication, markdown support, and responsive design built as a web technologies university project.',
+        desc: 'A modern, full-stack blog and discussion platform with secure authentication, markdown support, and responsive design, built by a team of 3 as a web technologies university project.',
         stack: ['SvelteKit', 'TypeScript', 'MongoDB', 'Prisma'],
         features: [
           'Email-based auth with session management',
@@ -57,6 +62,7 @@ export const projectCategories = {
           'SvelteKit for frontend and routing',
           'MongoDB with Prisma ORM for database',
           'Markdown-based content creation',
+          'Beta tested with 6 users (3 developers, 3 beta testers) before launch',
           'Fully responsive interface'
         ],
         link: 'https://github.com/AliAhmad-M/Kites',
@@ -65,12 +71,13 @@ export const projectCategories = {
       {
         number: '02',
         name: 'Portfolio Website',
-        desc: 'Literally this website that you\'re looking at right now, basically a place for me to showoff all the work that I have done so far.',
+        desc: 'Literally this website that you\'re looking at right now, basically a place for me to show off all the work that I have done so far.',
         stack: ['SvelteKit', 'JavaScript', 'CSS', 'HTML'],
         features: [
           'Fully responsive design',
           'Smooth scroll animations',
           'Dynamic project filtering',
+          'Blog page for my technical write-ups',
           'Custom CSS animations and effects'
         ],
         link: 'https://github.com/AliAhmad-M/aliahmadm'
@@ -84,10 +91,13 @@ export const projectCategories = {
         number: '01',
         name: 'Super Mario Bros AI',
         desc: 'A double Q-learning based deep reinforcement learning model built with Pytorch and gym-super-mario-bros that learns how to play Mario',
-        stack: ['Python', 'Pytorch', 'TorchRL', 'OpenAI Gym'],
+        stack: ['Python', 'Pytorch', 'TorchRL', 'OpenAI Gym', 'PySide6'],
         features: [
           'Double Q-learning based Deep RL Model',
           'Accurate Super Mario Bros environment',
+          'Semantic abstraction layer that reduces state complexity',
+          'Trained for 4,000 episodes; cleared Level 1-1 in 1 of 25 evaluation runs (best reward 3,029)',
+          'PySide6 dashboard to train, test and monitor the agent live',
           'Training model on level of your choice',
           'Testing trained model with visualization'
         ],
@@ -102,10 +112,26 @@ export const projectCategories = {
           'Finite State Machines for creature behavior',
           'Prey-predator interaction dynamics',
           'Natural selection mechanics',
+          'Runs up to about 50 agents at 60 FPS; the map runs out of space before performance does',
           'A* pathfinding implementation',
         ],
         link: "https://github.com/AliAhmad-M/GodotEcosystem",
         download: "https://blaze-glitch.itch.io/ecosystem"
+      },
+      {
+        number: '03',
+        name: 'Capricorn',
+        desc: 'A desktop AI assistant built with Electron and the Groq API that chats in text, understands voice, and can use tools such as web search. Based on Project Capricorn from Cyberpunk: Edgerunners.',
+        stack: ['Electron', 'JavaScript', 'HTML', 'CSS', 'Groq API', 'Fish Audio API'],
+        features: [
+          'Text replies in under a second',
+          'Tool use, including web search through DuckDuckGo or Brave',
+          'Voice input with Whisper transcription',
+          'Spoken replies through Fish Audio text-to-speech',
+          'Up to 3 fallback models per stage, so one failure does not stop a reply',
+          'Portable Windows release that runs without installing Node.js'
+        ],
+        link: 'https://github.com/AliAhmad-M/Capricorn'
       }
     ]
   },
@@ -122,7 +148,7 @@ export const projectCategories = {
           'Verlet integration for physics',
           'Constraint-based solving',
           'Realistic 3D cloth mesh',
-          'Interactive real-time simulationn'
+          'Interactive real-time simulation'
         ],
         link: 'https://github.com/AliAhmad-M/3D-Cloth-Simulation'
       },
@@ -184,10 +210,10 @@ export const projectCategories = {
 };
 
 export const skills = {
-  'Languages': ['Assembly', 'C/C++', 'C#', 'Python', 'TypeScript', 'JavaScript', 'Java'],
-  'Web Dev': ['Next.js', 'Sveltekit', 'Node.js', 'Express.js', 'React.js', 'Svelte'],
-  'Database': ['SQL', 'MongoDB', 'Supabase', 'Prisma ORM'],
-  'Game Dev': ['Unity', 'Godot', 'OpenGL', 'SDL2', 'Raylib'],
-  'Dev Tools': ['Git', 'Bash', 'VS Code', 'Visual Studio', 'JetBrains IDEs'],
-  'ML/Data': ['NumPy', 'Pandas', 'Matplotlib', 'OpenCV', 'Scikit-Learn', 'Pytorch', 'YOLO']
+  'Languages': ['Assembly', 'C/C++', 'C#', 'GDScript', 'Java', 'Python', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
+  'Web Dev': ['React', 'Next.js', 'SvelteKit', 'Electron', 'Node.js', 'Express', 'ASP.NET', 'Flask', 'REST APIs', 'Authentication', 'Session Management'],
+  'Database': ['MySQL', 'Oracle PLSQL', 'PostgreSQL', 'MongoDB', 'Supabase', 'Prisma ORM'],
+  'Game Dev': ['Unity', 'Godot', 'OpenGL', 'SDL2', 'Raylib', 'ImGui', 'Box2D', 'Jolt Physics', 'ECS', 'Game Physics', 'Enemy AI', 'NavMesh'],
+  'Dev Tools': ['Git', 'Bash', 'VS Code', 'Visual Studio', 'JetBrains IDEs', 'Azure'],
+  'ML/Data': ['NumPy', 'Pandas', 'Matplotlib', 'OpenCV', 'Scikit-Learn', 'Pytorch', 'TorchRL', 'YOLO', 'Computer Vision', 'Reinforcement Learning', 'OpenAI API', 'Groq API']
 };

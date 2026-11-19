@@ -34,12 +34,14 @@ export default function Home() {
             </h1>
 
             <p className="hero-title">
-              I enjoy making software and solving difficult technical problems. This portfolio shows my work, the decisions behind it and the results.
+              This portfolio shows my work, the decisions behind it, and the results.
+              <br/>
+              ~ CS @ <a href="https://nust.edu.pk/">NUST</a> '27
             </p>
 
             <div className="hero-actions">
               <a href="#projects" className="btn btn-secondary">
-                View My Projcts
+                View My Projects
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M7 17L17 7M17 7H7M17 7V17" />
                 </svg>
@@ -83,13 +85,16 @@ export default function Home() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I&apos;m a <strong>student of Computer Science at the National University of Sciences and Technology (NUST) H-12, Islamabad</strong> with a strong passion for problem solving.
+                I am a student of <strong>BS in Computer Science</strong> at the <strong>National University of Sciences 
+                  and Technology</strong>, H-12, Islamabad, Pakistan.
               </p>
               <p>
-                I've worked extensively across multiple fields including full-stack web development, artificial intelligence and game development and even developed custom game engines from scratch.
+                I've worked extensively across multiple fields including full-stack development, deep learning + artificial 
+                intelligence, computer vision + computer graphics, and even developing custom game engines from scratch.
               </p>
               <p>
-                I enjoy challenging myself by solving tough problems to improve my skills. Every project is an opportunity to learn something new and push my boundaries.
+                I enjoy challenging myself by solving tough problems to improve my skills. I have a thirst for knowledge and 
+                every project is an opportunity to learn something new and push my boundaries.
               </p>
             </div>
 
@@ -151,7 +156,7 @@ export default function Home() {
               <span className="edu-date">Sep 2018 - Jun 2023</span>
               <h3 className="edu-degree">Cambridge International Education O/A Levels</h3>
               <p className="edu-school">Bloomfield Hall School</p>
-              <p className="edu-location">Bahawalpur, Pakistan</p>
+              <p className="edu-location">Bahawalpur, Pakistan | 7A*, 1A (O Levels) + 1A*, 2A (A Levels)</p>
             </div>
           </div>
         </div>
@@ -190,7 +195,7 @@ export default function Home() {
           <div className="contact-wrapper">
             <p>
               I&apos;m always interested in hearing about new opportunities,
-              collaborations, or just chatting about technology in general.
+              collaborations, or just chatting about tech in general.
             </p>
 
             <a href="mailto:aliahmadbhs@gmail.com" className="contact-email">
@@ -202,13 +207,7 @@ export default function Home() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
-                LinkedIn
-              </a>
-              <a href="tel:+92-306-016-7493" className="contact-link">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-                </svg>
-                Phone #
+                View my LinkedIn profile
               </a>
             </div>
           </div>
